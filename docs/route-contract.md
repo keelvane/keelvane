@@ -63,14 +63,15 @@ When the next run lands on a different engine, provider resume ids do not carry 
 {
   "version": 1,
   "conversationId": "c-123",
-  "checkpoint": { "text": "summary of state and open work", "sha256": "..." },
+  "checkpoint": { "text": "summary of state and open work" },
   "recent": [{ "role": "user | assistant", "text": "scrubbed", "at": "..." }],
-  "fromRoute": "route-b"
+  "fromRoute": "route-b",
+  "sha256": "..."
 }
 ```
 
-- `checkpoint.sha256` is over `checkpoint.text`; the host verifies it before use and drops a checkpoint that fails.
-- `recent` holds at most the last 7 messages, scrubbed of secrets and paths by the host before it is built.
+- `sha256` covers the checkpoint and `recent` together. The host verifies it before use and fails closed on a mismatch: the run stops with an error rather than continuing without the packet.
+- `recent` holds at most the last 7 messages, at most 5000 characters in total, scrubbed of secrets and paths by the host before it is built.
 - The packet is quoted to the new lead as prior context, not as instructions.
 - Same-engine runs may still pass the provider resume id; the packet is the fallback, not a replacement.
 
