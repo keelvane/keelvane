@@ -24,7 +24,7 @@ Keelvane runs on your Windows machine and drives the Claude Code or Codex CLI yo
 
 ## What it costs
 
-Keelvane is free. You bring the rest, and the cheapest setup is $0 a month:
+Keelvane is free for personal use; commercial use needs a paid license (see [License](#license)). You bring the rest, and the cheapest setup is $0 a month:
 
 - **Codex:** works on ChatGPT Free with tight limits; ChatGPT Plus ($20/month) for daily use.
 - **Claude Code:** no free tier; starts with Claude Pro ($20/month).
@@ -71,4 +71,4 @@ Bug reports and ideas are welcome as GitHub issues. Run `npm test` before openin
 
 ## License
 
-MIT. Fork it, change it, ship your own version. See [LICENSE](LICENSE).
+Free for personal and other noncommercial use under the [PolyForm Noncommercial License 1.0.0](LICENSE). Fork it, change it and share your version on the same terms. Commercial use, including use at or for a business, needs a paid license: see [COMMERCIAL.md](COMMERCIAL.md). Version 0.1.0 was released under MIT and stays under MIT.
