@@ -22,6 +22,12 @@ Keelvane runs on your Windows machine and drives the Claude Code or Codex CLI yo
 - For phone access: a Muse account and a free Tailscale account
 - Git, recommended
 
+## Install from a release (easiest)
+
+1. Download `keelvane-<version>.zip` from [Releases](https://github.com/keelvane/keelvane/releases). It bundles its own Node.js, so you do not need Node installed.
+2. Unzip it anywhere and double-click `setup.cmd`.
+3. Windows SmartScreen may warn that the file is from an unknown publisher, because builds are not code-signed yet. Choose "More info", then "Run anyway", or install from source instead.
+
 ## Install from source
 
 ```
