@@ -22,6 +22,17 @@ Keelvane runs on your Windows machine and drives the Claude Code or Codex CLI yo
 - For phone access: a Muse account and a free Tailscale account
 - Git, recommended
 
+## What it costs
+
+Keelvane is free. You bring the rest, and the cheapest setup is $0 a month:
+
+- **Codex:** works on ChatGPT Free with tight limits; ChatGPT Plus ($20/month) for daily use.
+- **Claude Code:** no free tier; starts with Claude Pro ($20/month).
+- **Muse (optional, for phone access):** free tier; Power is $20/month.
+- **Tailscale (optional):** free personal plan.
+
+So $0 to try it, and about $20 a month for real work. Plans change; check each provider's current pricing.
+
 ## Install from a release (easiest)
 
 1. Download `keelvane-<version>.zip` from [Releases](https://github.com/keelvane/keelvane/releases). It bundles its own Node.js, so you do not need Node installed.
